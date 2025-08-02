@@ -1,0 +1,389 @@
+/* Media Queries */
+
+@media screen and (min-width: 480px)
+{
+    .sector_quiensoy::before
+    {
+        height: 36%;
+    }
+}
+@media screen and (min-width: 560px) {
+    .sector_quiensoy::before
+    {
+        height: 42%;
+    }
+}
+@media screen and (min-width: 640px) {
+    .sector_quiensoy::before
+    {
+        height: 49%;
+    }
+}
+@media screen and (min-width: 800px)
+{
+    :root
+    {
+        
+    }
+    .oculto
+    {
+        opacity: 1 !important;
+    }
+    .header__nav-wrapper.fuera
+    {
+        top: 0;
+    }
+    .header__nav.oculto
+    {
+        height: auto;
+    }
+    .header__openclose
+    {
+        display: none;
+    }
+    header.header
+    {
+        width: fit-content;
+        height: auto;
+        position: absolute;
+        margin: 1rem;
+        display: flex;
+        flex-direction: row;
+        padding: .5rem 0 .5rem 0;
+        background-color: var(--principal);
+        border-radius: 6rem;
+        box-shadow: 0 0 15px 0 #fff5;
+        z-index: 10;
+    }
+    .div__logo 
+    {
+        background-color: #fff;
+        padding: .27rem;
+        clip-path: circle();
+        width: 50px;
+        height: fit-content;
+        margin: 0 0 0 .5rem;
+    }
+    #header-logoMQ
+    {
+        display: block;
+    }
+    .div__logo > .header__logo
+    {
+        margin: auto;
+    }
+    div.header__nav-wrapper, div.header__nav-wrapper.oculto
+    {
+        position: static;
+        display: flex;
+        max-width: 100dvw;
+        border: none;
+        background: none;
+        margin: 0 1.15rem 0 1.15rem;
+    }
+    nav.header__nav {
+        gap: 1.15rem;
+        margin: 0;
+        padding: 0;
+        background: none;
+        border: none;
+        display: flex;
+        flex-direction: row;
+    }
+    .header .div__button
+    {
+        margin: 1.5rem 0 auto 0;
+        width: 15rem;
+    }
+    .header__nav a.nav__item
+    {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        width: fit-content;
+        height: auto;
+        color: #fff;
+        transition: transform .31s;
+    }
+    .header__nav a.nav__item:hover
+    {
+        color: var(--secundario);
+        margin: 0 1rem 0 1rem;
+        transform: scale(1.21);
+    }
+    .sector_inicio
+    {
+        background: none;
+        display: flex;
+    }
+    .inicio__video-wrapper
+    {
+        display: block;
+        z-index: -5;
+        position: absolute;
+        top: 0; left: 0;
+    }
+    .inicio__video
+    {
+        max-width: 100dvw;
+        object-fit: cover;
+        position: absolute;
+        z-index: -5;
+        top: 0; left: 0;
+        opacity: 0;
+        min-height: 100dvh;
+        transition: opacity 1s ease-in-out;
+    }
+    .inicio__video.activo
+    {
+        opacity: 1;
+    }
+    .inicio-container
+    {
+        height: auto;
+        margin: auto;
+    }
+    h1.inicio__title
+    {
+        text-align: start;
+    }
+    .inicio__textdiv div
+    {
+        max-width: 600px;
+    }
+    .sector_quiensoy::before
+    {
+        display: none;
+        background-position-y: bottom;
+    }
+    .quiensoy-container
+    {
+        margin: auto;
+        max-width: 1150px;
+        display: grid;
+        grid-template-columns: minmax(auto,1fr) minmax(auto,1fr);
+    }
+    .quiensoy__title
+    {
+        text-shadow: 0 0 5px #75acffb2;
+    }
+    .quiensoy__img
+    {
+        opacity: 1;
+        width: 100%;
+        margin: auto;
+    }
+    .quiensoy__img-wrapper
+    {
+        z-index: -1;
+        display: flex;
+        width: 100%;
+        padding: 2.05rem 0 2.05rem 0;
+        border-radius: 1rem;
+        grid-area: span 2 / 1;
+    }
+    #tm1.quiensoy__textomodal
+    {
+        margin: 0 auto 0 auto;
+        max-width: 95%;
+        grid-column: 2;
+        background-color: #111;
+    }
+    .quiensoy__textomodal
+    {
+        grid-column: span 2;
+    }
+    .cliente__title
+    {
+        text-align: center;
+        margin: .43rem auto .43rem auto;
+        width: 65%;
+    }
+    .cliente
+    {
+        margin: auto;
+    }
+    .plan
+    {
+        max-width: 36rem;
+    }
+    .cliente__review .parrafo
+    {
+        line-height: 1.3;
+        padding: .8rem .5rem .8rem .5rem;
+    }
+    .plan__buy
+    {
+        max-width: 40rem;
+    }
+    .plan__buy:hover
+    {
+        color: var(--acento);
+        outline: 1px solid var(--acento);
+        background-color: #fff1;
+    }
+    .contacto-container
+    {
+        padding: 2.3rem 0 2.3rem 0;
+        margin: auto;
+        max-width: 750px;
+    }
+    .contacto
+    {
+        margin: 1.1rem auto 1.1rem auto;
+        width: 90%;
+    }
+    .contacto__enviar:hover
+    {
+        cursor: pointer;
+        background-color: var(--fondocontacto);
+    }
+}
+@media screen and (min-width: 1050px) {
+    .header__nav
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    .header .div__button
+    {
+        margin: .5rem 0 auto auto;
+        width: 16rem;
+    }
+    .nav__row a.nav__item
+    {
+        margin: auto 0 auto 0 !important;
+        height: fit-content;
+    }
+    h1.inicio__title
+    {
+        font-size: 3rem;
+    }
+    .inicio-container p.inicio__text
+    {
+        font-size: 1.03rem;
+    }
+    a.inicio__button
+    {
+        height: auto;
+    }
+    .quiensoy__textomodal:nth-of-type(1), .quiensoy__textomodal:nth-of-type(2)
+    {
+        padding: 1rem .8rem 1rem .8rem;
+    }
+    .sector_clientes
+    {
+        display: grid;
+        grid-template-columns: minmax(50%,1fr) minmax(50%,1fr);
+        grid-template-rows: minmax(auto,1fr);
+    }
+    #s3__c1.cliente
+    {
+        grid-column: 1 / 1;
+    }
+    .sector_clientes
+    {
+        padding: 2rem 0 2rem 0;
+    }
+    .cliente
+    {
+        min-height: 42rem;
+        height: 46rem;
+    }
+    h2.cliente__title
+    {
+        text-align: start;
+        margin: 0 0 1.1rem 0;
+    }
+    .cliente__review
+    {
+        margin: 1rem 0 1rem 0;
+    }
+    .cliente__wrapper-img
+    {
+        margin: auto;
+    }
+    .cliente__img
+    {
+        margin: auto;
+        max-height: 25.867rem;
+        height: auto;
+    }
+    .sector_planes
+    {
+        flex-direction: row;
+    }
+    .plan
+    {
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+    }
+    .plan .plan__subtitle
+    {
+        margin-bottom: auto;
+    }
+    .plan .plan__benefits
+    {
+        margin: auto;
+    }
+    .plan .plan__buy
+    {
+        margin-top: auto;
+    }
+
+    @keyframes flecha
+    {
+        0%
+        {
+            font-size: 1.45rem;
+            background-color: var(--acento);
+            text-shadow: none;
+        }
+        50%
+        {
+            font-size: 1.84rem;
+            background-color: var(--secundario);
+            text-shadow: 0 0 5px #fff;
+        }
+        100%
+        {
+            font-size: 1.45rem;
+            background-color: var(--acento);
+            text-shadow: none;
+        }
+    }
+}
+@media screen and (min-width: 1200px)
+{
+    .inicio__video
+    {
+        width: 100dvw;
+        transform: none;
+    }
+}
+@media screen and (min-width: 1500px) {
+    .cliente
+    {
+        height: 55rem;
+    }
+    .cliente__wrapper-img
+    {
+        width: 100%;
+        box-sizing: content-box;
+        padding: 1.2rem 0 1.2rem 0;
+    }
+    .cliente__img-container
+    {
+        max-width: 18rem;
+    }
+    .cliente__img
+    {
+        margin: auto;
+        max-width: 100%;
+        width: 100%;
+        max-height: 32.67rem;
+        height: auto;
+    }
+}
+
