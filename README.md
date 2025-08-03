@@ -1,4 +1,4 @@
-# PTnatedawson-aestethic
+# PTnatedawson-aesthetic
 A sample of a landing page for a personal trainer.
 
 ![readme-img-aestethic](https://github.com/user-attachments/assets/82de7f9e-3eee-480a-935d-cd636241701b)
